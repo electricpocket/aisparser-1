@@ -319,8 +319,7 @@ int __stdcall conv_pos( long *latitude, long *longitude )
     \param longitude pointer to an unsigned longitude
 
     This function converts the raw 2's complement values to signed long
-    1/10000 minute position. It is used internally by all of the messages
-    that contain position information.
+    1/10000 minute position.
 */
 /* ----------------------------------------------------------------------- */
 int __stdcall conv_pos27( long *latitude, long *longitude )

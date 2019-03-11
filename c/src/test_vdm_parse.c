@@ -1936,15 +1936,15 @@ int test_ais_27( void )
 		return 0;
 	}
 
-	if( message.longitude != -73481550 )
+	if( message.longitude != -84492456 )
 	{
-		fprintf( stderr, "test_ais_27() failed: longitude %ld\n",message.longitude);
+		fprintf( stderr, "test_ais_27() failed: longitude\n");
 		return 0;
 	}
 
-	if( message.latitude !=  28590700 )
+	if( message.latitude !=  32539000 )
 	{
-		fprintf( stderr, "test_ais_27() failed: latitude %ld\n",message.latitude);
+		fprintf( stderr, "test_ais_27() failed: latitude\n");
 		return 0;
 	}
 
@@ -1954,7 +1954,7 @@ int test_ais_27( void )
 		return 0;
 	}
 
-	if( message.cog != 3500 )
+	if( message.cog != 350 )
 	{
 		fprintf( stderr, "test_ais_27() failed: cog\n");
 		return 0;

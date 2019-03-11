@@ -45,7 +45,7 @@ int main( int argc, char *argv[] )
                           "B52IRsP005=abWRnlQP03w`UkP06",
                           "H52IRsP518Tj0l59D0000000000",
                           "H52IRsTU000000000000000@5120",
-			  "K3M@PpqK>Qkv=PEp"
+                          "K3M@PpqK>Qkv=PEp"
 
 
     };
@@ -178,6 +178,10 @@ int main( int argc, char *argv[] )
     {
         exit(-1);
     }
+    if( test_ais_27() != 1 )
+    {
+            exit(-1);
+    }
 
     printf("Testing test_msgs\n");
     
@@ -281,7 +285,7 @@ int main( int argc, char *argv[] )
                 } 
                 break;
 			
-	    case 27:
+            case 27:
                 if( parse_ais_27( &ais, &msg_27 ) == 0 )
                 {
                     /* Do something with results */

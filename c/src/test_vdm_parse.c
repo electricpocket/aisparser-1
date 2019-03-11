@@ -1936,7 +1936,7 @@ int test_ais_27( void )
 		return 0;
 	}
 
-	if( message.longitude != -84492456 )
+	if( message.longitude != -78201000 )
 	{
 		fprintf( stderr, "test_ais_27() failed: longitude %ld\n",message.longitude);
 		return 0;
